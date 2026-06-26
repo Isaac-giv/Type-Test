@@ -21,6 +21,9 @@ const wpmEl = document.getElementById('wpm');
 const accuracyEl = document.getElementById('accuracy');
 const messageEl = document.getElementById('message');
 const resetBtn = document.getElementById('resetBtn');
+const startBtn = document.getElementById('startBtn');
+const landingEl = document.getElementById('landing');
+const testContainer = document.getElementById('testContainer');
 
 // ---- HELPERS ----
 function pickRandomText() {
@@ -148,10 +151,31 @@ function resetTest() {
 }
 
 // ---- INIT ----
-resetTest();
+function showTest() {
+  landingEl.classList.add('hidden');
+  testContainer.classList.remove('hidden');
+  inputEl.focus();
+}
+
+function resetTest() {
+  stopTimer();
+  startTime = null;
+  isFinished = false;
+  inputEl.disabled = false;
+  inputEl.value = '';
+  currentText = pickRandomText();
+  typedChars = currentText.split('').map(ch => ({ char: ch, status: 'pending' }));
+  renderDisplay();
+  timerEl.textContent = '0';
+  wpmEl.textContent = '0';
+  accuracyEl.textContent = '100';
+  messageEl.textContent = '';
+}
+
+startBtn.addEventListener('click', showTest);
 
 // Event listeners
 inputEl.addEventListener('input', handleTyping);
 resetBtn.addEventListener('click', resetTest);
 inputEl.addEventListener('paste', (e) => e.preventDefault());
-window.addEventListener('load', () => inputEl.focus());
+window.addEventListener('load', () => {});
