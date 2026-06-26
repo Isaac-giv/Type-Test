@@ -1,10 +1,10 @@
 // ---- SAMPLE TEXTS ----
 const TEXTS = [
-  "The quick brown fox jumps over the lazy dog near the riverbank.",
-  "Typing speed tests measure how fast you can type words per minute.",
-  "Practice every day to improve your muscle memory and accuracy.",
-  "Coding is fun and creative. Build projects that solve real problems.",
-  "The sun set behind the mountains, painting the sky in orange and pink."
+  "The quick brown fox jumps over the lazy dog near the riverbank while the sun dips below the distant hills, casting long shadows across the meadow.",
+  "Typing speed tests measure how fast you can type words per minute, helping you track progress and improve both accuracy and efficiency over time with consistent practice.",
+  "Practice every day to improve your muscle memory and accuracy, allowing your fingers to move naturally across the keyboard without hesitation or conscious thought.",
+  "Coding is fun and creative. Build projects that solve real problems, learn from your mistakes, and share your work with the community to grow together as developers.",
+  "The sun set behind the mountains, painting the sky in orange and pink. Birds chirped softly as a cool breeze swept through the valley, signaling the arrival of evening."
 ];
 
 // ---- STATE ----
