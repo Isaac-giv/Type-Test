@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>⌨️ Typing Speed Test</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+  <h1>⌨️ Type & Test</h1>
+  <div class="stats">
+    <span>⏱️ <b id="timer">0</b>s</span>
+    <span>📝 WPM <b id="wpm">0</b></span>
+    <span>🎯 Accuracy <b id="accuracy">100</b>%</span>
+  </div>
+
+  <div class="text-display" id="textDisplay"></div>
+
+  <input type="text" id="input-area" placeholder="Start typing here..." autofocus />
+  
+  <div class="btn-group">
+    <button id="resetBtn" class="reset-btn">🔄 New Test</button>
+  </div>
+  <div class="message" id="message"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
